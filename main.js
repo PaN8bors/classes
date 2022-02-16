@@ -33,10 +33,16 @@ class Pet {
     }
 
     describe() {
-        console.log(
-            `This is my ${this.species} ${this.name}. ` 
-            + `He is a ${this.age} year old ${this.gender} ${this.breed}.`
-        )
+        if (this.gender == 'male') {
+            console.log(
+                `This is my ${this.species} ${this.name}. ` 
+                + `He is a ${this.age} year old ${this.gender} ${this.breed}.`
+        )} else { 
+            console.log(
+                `This is my ${this.species} ${this.name}. ` 
+                + `She is a ${this.age} year old ${this.gender} ${this.breed}.`
+            )
+        }
     }
 }
 
@@ -45,7 +51,7 @@ function main() {
         myPet.setSpecies('dog')
              .setAge('20')
              .setBreed('Shi Tzu')
-             .setGender('male')
+             .setGender('female')
     myPet.describe();
 }
 
