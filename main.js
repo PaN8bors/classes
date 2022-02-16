@@ -51,7 +51,7 @@ function main() {
         myPet.setSpecies('dog')
              .setAge('20')
              .setBreed('Shi Tzu')
-             .setGender('female')
+             .setGender('male')
     myPet.describe();
 }
 
