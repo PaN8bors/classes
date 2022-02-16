@@ -6,8 +6,8 @@ class Pet {
 }
 
 function main() {
-const myPet = new Pet('male', 'Cooper');
-    console.log(myPet)
+    const myPet = new Pet('male', 'Cooper');
+        console.log(myPet)
 }
 
 main();
